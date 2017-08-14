@@ -4,6 +4,9 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { CreatorComponent } from './components/creator/creator.component';
+import { RendererComponent } from './components/renderer/renderer.component';
+import { ConfiguratorComponent } from './components/configurator/configurator.component';
+import { ExtenderComponent } from './components/extender/extender.component';
 
 @NgModule({
     imports: [
@@ -12,6 +15,6 @@ import { CreatorComponent } from './components/creator/creator.component';
         FlexLayoutModule,
         UIKitModule
     ],
-    declarations: [CreatorComponent]
+    declarations: [CreatorComponent, RendererComponent, ConfiguratorComponent, ExtenderComponent]
 })
 export class CreatorModule { }

@@ -1,37 +1,5 @@
-<div fxLayout="row">
-    <div fxFlex="25%">
-        <!-- Left Container -->
-        <creator-page-section>
-            <h3 header>Pages</h3>
-            <div container>
-                <p>pages container</p>
-            </div>
-        </creator-page-section>
-
-        <creator-page-section>
-            <h3 header>Components</h3>
-            <div container>
-                <p>components container</p>
-            </div>
-        </creator-page-section>
-    </div>
-    <div fxFlex="50%">
-        <!-- Middle Container -->
-        <creator-page-section>
-            <h3 header>Device</h3>
-            <div container>
-                <p>device container</p>
-            </div>
-        </creator-page-section>
-    </div>
-
-    <div fxFlex="25%">
-        <!-- Right Container -->
-        <creator-page-section>
-            <h3 header>Settings</h3>
-            <div container>
-                <p>settings container</p>
-            </div>
-        </creator-page-section>
-    </div>
+<div fxLayout="row" class="creator-main">
+    <creator-configurator fxFlex="25%" class="creator-column-left"></creator-configurator>
+    <creator-renderer fxFlex="50%"></creator-renderer>
+    <creator-extender fxFlex="25%" class="creator-column-right"></creator-extender>
 </div>

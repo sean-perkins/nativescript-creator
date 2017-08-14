@@ -1,0 +1,16 @@
+@import '~assets/theme/color/index';
+
+.creator {
+    &-main {
+        height: 100vh;
+        width: 100vw;
+    }
+    &-column {
+        &-left {
+            border-right:1px solid $white300;
+        }
+        &-right {
+            border-left:1px solid $white300;
+        }
+    }
+}
