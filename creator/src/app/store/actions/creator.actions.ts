@@ -13,5 +13,10 @@ export default class CreatorActions {
         readonly type = CreatorState.ActionTypes.REMOVE_PAGE;
         constructor(public payload: Page) { }
     }
+
+    static RotateDeviceAction = class implements Action {
+        readonly type = CreatorState.ActionTypes.ROTATE_DEVICE;
+        payload = null;
+    }
 }
 

@@ -1,6 +1,10 @@
 <creator-page-section>
-    <h3 header>Device</h3>
-    <div container>
-        <p>device container</p>
+    <div header fxLayout="row" fxLayoutAlign="space-between center">
+        <h3 fxFlex="40%">Device</h3>
+        <div fxFlex="5%">
+            <a class="btn" (click)="rotateDevice()"><md-icon>rotate_90_degrees_ccw</md-icon></a>
+        </div>
     </div>
+    <creator-emulator container
+        [device]="device$ | async"></creator-emulator>
 </creator-page-section>

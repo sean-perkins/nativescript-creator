@@ -1,0 +1,10 @@
+@import '~assets/theme/color/index';
+
+.footer {
+    position: absolute;
+    right: 5px;
+    bottom:0;
+    z-index:5;
+    font-size:12px;
+    color: map_get($mat-blue, 500);
+}

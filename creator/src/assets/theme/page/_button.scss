@@ -1,3 +1,4 @@
+@import '~assets/theme/color/index';
 
 .btn {
     font-size:13px;
@@ -5,4 +6,13 @@
     font-weight: 500;
     cursor:pointer;
     text-decoration: none;
+    &:hover {
+        color: map_get($mat-blue, 500);
+        transition: all 0.5s;
+    }
+    .mat-icon {
+        height: 13px;
+        width:13px;
+        font-size:15px;
+    }
 }

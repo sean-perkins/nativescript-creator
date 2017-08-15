@@ -1,5 +1,8 @@
 body {
     margin:0;
+    min-width:1024px;
+    min-height:500px;
+    overflow:hidden;
 }
 
 @import 'button';
