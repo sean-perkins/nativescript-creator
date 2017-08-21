@@ -2,6 +2,8 @@ import { Component, Input, OnInit } from '@angular/core';
 
 import * as Konva from 'konva';
 
+import { SegmentedBar, Label } from './../../../common/models/konva/index';
+
 @Component({
     selector: 'creator-emulator-stage',
     templateUrl: './emulator-stage.component.html',
@@ -21,40 +23,20 @@ export class EmulatorStageComponent implements OnInit {
         var stage = new Konva.Stage({
             container: 'container',
             width: 400, //this.width,
-            height: 900, //this.height,
-            draggable: true
+            height: 900, //this.height
         });
 
-        // then create layer
-        var layer = new Konva.Layer();
+        const label = new Label();
+        label.color = 'blue';
 
-        // create our shape
-        // var circle = new Konva.Circle({
-        //     x: stage.getWidth() / 2,
-        //     y: stage.getHeight() / 2,
-        //     radius: 70,
-        //     fill: 'red',
-        //     stroke: 'black',
-        //     strokeWidth: 4
-        // });
+        const segmentedBar = new SegmentedBar();
 
-        const label = new Konva.Label({
-            x: 20,
-            y: 100
-        });
-
-        label.add(new Konva.Text({
-            text: 'UILabel',
-            fontFamily: 'Calibri',
-            fontSize: 16
-        }));
-
-        // add the shape to the layer
-        layer.add(label);
         // add the layer to the stage
-        stage.add(layer);
+        stage.add(label.view);
+        stage.add(segmentedBar.view);
 
         console.log('init');
+
 
     }
 
